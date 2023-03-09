@@ -60,7 +60,11 @@ const Home = () => {
 				className="section1"
 				data-aos="fade-up">
 				<Container>
-					<div className="row-content">
+					<div
+						className="row-content"
+						style={{
+							backgroundColor: "#f8b48f",
+						}}>
 						<div className="left-section">
 							<figure>
 								<img
@@ -112,7 +116,11 @@ const Home = () => {
 				className="section1"
 				data-aos="fade-up">
 				<Container>
-					<div className="row-content">
+					<div
+						className="row-content"
+						style={{
+							backgroundColor: "#f8b48f",
+						}}>
 						<div className="left-section">
 							<figure>
 								<img

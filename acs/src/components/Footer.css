@@ -38,7 +38,7 @@ footer {
 	margin-top: 20px;
 }
 
-h4 {
+footer h4 {
 	margin-top: 40px;
 	margin-bottom: 10px;
 	width: auto;
@@ -132,18 +132,18 @@ li {
 	margin: 0px 10%;
 }
 
-p {
+footer p {
 	color: #777777;
 	background-color: transparent;
 	font-weight: normal;
 }
 
-a:link {
+footer a:link {
 	text-decoration: none;
 	color: #000000;
 }
 
-a:visited {
+footer a:visited {
 	text-decoration: none;
 	color: #000000;
 }
@@ -153,7 +153,7 @@ a:visited {
 	color: #000000;
 }
 
-a:active {
+footer a:active {
 	text-decoration: none;
 	color: #000000;
 }

@@ -1,6 +1,6 @@
 .left {
 	width: 100%;
-	background-color: #000080;
+	background-color: #86bbd8;
 	display: none;
 }
 
@@ -11,7 +11,7 @@
 
 .contact-icons {
 	display: block;
-	background-color: #e4f5de;
+	background-color: #86bbd8;
 	padding: 40px 0px 228px;
 }
 
@@ -35,6 +35,7 @@
 	font-size: 12px;
 	font-weight: bold;
 	margin: 10px auto;
+    justify-content: center;
 }
 
 .icon-text span {
@@ -43,7 +44,7 @@
 	font-weight: bold;
 }
 
-span {
+.left span {
 	font-size: small;
 	font-weight: normal;
 	margin: auto;
@@ -219,7 +220,7 @@ span {
 		margin: 30px auto;
 		padding: 10px;
 		justify-content: center;
-		color: #e4f5de;
+		color: #000;
 	}
 
 	.contact-form-box {

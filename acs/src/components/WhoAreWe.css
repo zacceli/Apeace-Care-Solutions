@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+	font-family: "Montserrat", sans-serif;
+}
+
+.slider {
+	text-align: center;
+	padding: 20px 0px;
+	background-color: #fff7f5;
+}
+
+.tab-container {
+	display: none;
+}
+
+.top-content {
+	background-color: #fff7f5;
+	padding-bottom: 40px;
+}
+
+.inner-contain {
+	display: flex;
+}
+
+.wwa-directory {
+	margin: 30px;
+	margin-right: auto;
+}
+
+.img-wrap {
+	display: flex;
+	width: 100%;
+	position: relative;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.mission-vision {
+	text-align: center;
+	background-color: #fafafc;
+}
+
+h2 {
+	font-weight: 1000;
+}
+
+.nav-link {
+	font-weight: 500;
+	font-size: 1.2rem;
+}
+
+.nav-pills .nav-link:hover {
+	background-color: #fff;
+	color: #a1a1a1;
+}
+
+.nav-pills .nav-link.active {
+	color: #000;
+	background-color: #fff;
+}
+
+.nav-pills .nav-link.active::after {
+	content: url(../../public/black-diamond.svg);
+	display: inline-block;
+	zoom: 70%;
+	position: relative;
+	right: -15px;
+}
+
+.circle-shape h3 {
+	margin: 30px 0px 10px;
+}
+
+.img-wrap img {
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 50%;
+	border: none;
+}
+
+.img-wrapper {
+	text-align: center;
+}
+
+.img-wrapper img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+
+.circle-shape {
+	display: flex;
+	flex-direction: column;
+	height: 150px;
+	width: 150px;
+	transform: translateY(-50%);
+	background-color: #feede7;
+	border-radius: 50%;
+	text-align: center;
+	justify-content: center;
+    margin: auto;
+}
+
+.inner-content {
+	margin-top: -150px;
+	padding: 107px 18px 38px;
+	background-color: #fff;
+}
+
+@media only screen and (min-width: 769px) {
+	.slider {
+		display: none;
+	}
+
+	.tab-container {
+		display: block;
+	}
+
+	.content-col {
+		margin: auto 0px;
+	}
+
+	.img-wrap {
+		display: flex;
+		width: 100%;
+		position: relative;
+		aspect-ratio: 1 / 1;
+		object-fit: cover;
+		border-radius: 50%;
+	}
+
+	.img-wrap figure {
+		height: 100%;
+	}
+
+	.circle-shape {
+		display: flex;
+		flex-direction: column;
+		height: 400px;
+		width: 400px;
+		transform: translateX(-50%);
+		background-color: #feede7;
+		border-radius: 50%;
+		text-align: center;
+		justify-content: center;
+	}
+
+	.circle-shape p {
+		padding: 3px 35px;
+	}
+
+	.tab-pane {
+		display: flex;
+		width: 100%;
+		height: 100%;
+	}
+
+	#left-tabs-example-tabpane-first {
+		background-image: url(../../public/respect-img.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	#left-tabs-example-tabpane-second {
+		background-image: url(../../public/care-img.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	#left-tabs-example-tabpane-third {
+		background-image: url(../../public/integrity-img.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top center;
+	}
+
+	#left-tabs-example-tabpane-fourth {
+		background-image: url(../../public/professionalism-img.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top center;
+	}
+
+	.values-container.container {
+		margin: 0px;
+		margin-right: 0%;
+		max-width: 100%;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.homeImage {
+		height: 100%;
+	}
+
+	.circle-shape {
+		height: 600px;
+		width: 600px;
+	}
+
+	.tabs {
+		vertical-align: middle;
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		align-items: flex-start;
+	}
+	.tabs-col {
+		display: flex;
+	}
+}
+
+@media only screen and (min-width: 1281px) {
+	.tabs-col {
+		padding: 0px 10%;
+	}
+}

@@ -1,0 +1,205 @@
+footer {
+	background-color: #fafafc;
+	position: relative;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+}
+
+.column {
+	width: 33%;
+	padding: 0px;
+	margin: auto;
+	display: flex;
+}
+
+.col-end {
+	margin-left: auto;
+	align-content: center;
+}
+
+.inner-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-row {
+	width: 100%;
+	padding: 0px;
+	margin-right: 0px;
+}
+
+.main-row a {
+	width: auto;
+}
+
+.foot-list {
+	padding: 0px;
+	margin-top: 20px;
+}
+
+h4 {
+	margin-top: 40px;
+	margin-bottom: 10px;
+	width: auto;
+	margin-right: 0px;
+}
+
+ul {
+	list-style: none;
+	padding: 0px;
+}
+
+li {
+	padding: 10px 0px;
+	font-size: 12px;
+}
+
+.main-container {
+	margin: 0px 10% 0px;
+	padding: 20px 0px;
+}
+
+.text-box span {
+	display: block;
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.footer-img-wrapper {
+	display: flex;
+	justify-content: center;
+	margin-left: auto;
+	padding: 10px 0px;
+	flex-wrap: wrap;
+}
+
+.social-icons {
+	display: flex;
+	justify-content: space-evenly;
+	z-index: 1;
+}
+
+.cat-absolute-container {
+	justify-content: center;
+	margin: 0px auto;
+	height: 310px;
+	width: 310px;
+	display: flex;
+	align-items: center;
+	border: #f4f3f8;
+	border-style: solid;
+	border-radius: 50%;
+	border-width: 1.5px;
+	z-index: 2;
+	position: absolute;
+	bottom: 0;
+	top: 38%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	background-color: #fafafc;
+}
+
+.cat-absolute-container:hover {
+	background-color: #f4f3f8;
+}
+
+.icons {
+	padding: 10px;
+	width: 18px;
+	height: 18px;
+}
+
+.bottom-container {
+	background-color: #f4f3f8;
+	margin-top: 0px;
+	z-index: 1;
+	width: 100%;
+}
+
+.text-box {
+	vertical-align: middle;
+}
+
+.foot-container {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 30px 0px;
+	margin-bottom: 20px;
+	font-size: 12px;
+	margin: 0px 10%;
+}
+
+p {
+	color: #777777;
+	background-color: transparent;
+	font-weight: normal;
+}
+
+a:link {
+	text-decoration: none;
+	color: #000000;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+
+.link a:hover {
+	text-decoration: none;
+	color: #000000;
+}
+
+a:active {
+	text-decoration: none;
+	color: #000000;
+}
+
+@media only screen and (max-width: 768px) {
+	.column {
+		width: 100%;
+		margin: auto;
+	}
+
+	.inner-container {
+		display: block;
+		justify-content: center;
+	}
+
+	.cat-absolute-container {
+		position: relative;
+		transform: none;
+		top: 0%;
+		left: 0%;
+	}
+
+	.col-end {
+		margin: auto;
+	}
+
+	.foot-list {
+		margin: auto;
+	}
+
+	footer {
+		position: relative;
+	}
+
+	h4 {
+		padding-bottom: 1rem;
+		margin: auto;
+	}
+
+	.main-row {
+		justify-content: center;
+		margin-right: 0%;
+	}
+
+	.foot-container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}

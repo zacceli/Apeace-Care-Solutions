@@ -6,7 +6,7 @@ import { faHandshakeAngle, faHandHoldingHeart, faCompass, faBriefcase } from "@f
 import AOS from "aos"
 import "./WhoWeAre.css"
 
-const WhoWeAre = () => {
+const OurTeam = () => {
 	useEffect(() => {
 		AOS.init()
 	}, [])
@@ -22,7 +22,7 @@ const WhoWeAre = () => {
 			<section className="breadcrumb">
 				<Container>
 					<div className="inner-container">
-						<span>Home &rarr; Who We Are</span>
+						<span>Home &rarr; Our Team</span>
 					</div>
 				</Container>
 			</section>
@@ -39,14 +39,10 @@ const WhoWeAre = () => {
 								xl={6}>
 								<Container>
 									<Row className="mb-3">
-										<h1>Redefining Care Services</h1>
+										<h1>TBC</h1>
 									</Row>
 									<Row>
-										<p style={{ fontSize: "20px" }}>
-											We Strongly believe that CARE matters and we take pride in placing the utmost value to care
-											service render to our customers. We are committed to offering care with passion rather than
-											simply performing tasks out of a sense of duty.
-										</p>
+										<p style={{ fontSize: "20px" }}>TBC</p>
 									</Row>
 								</Container>
 							</Col>
@@ -290,4 +286,4 @@ const WhoWeAre = () => {
 	)
 }
 
-export default WhoWeAre
+export default OurTeam

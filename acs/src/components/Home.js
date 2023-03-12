@@ -1,5 +1,6 @@
 import "./Home.css"
-import { Container, Row, Col } from "react-bootstrap"
+import { Link } from "react-router-dom"
+import { Container, Row } from "react-bootstrap"
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import { useEffect } from "react"
 import ModalDialog from "./ModalDialog"
@@ -156,13 +157,13 @@ const Home = () => {
 									/>
 									<div className="hover-content">
 										<div className="hover-text">
-											<a href="#">Know More</a>
+											<Link to="services/live-in-care">Know More</Link>
 										</div>
 									</div>
 								</figure>
 							</div>
 							<h4>
-								<a href="#">Live In Care</a>
+								<Link to="services/live-in-care">Live In Care</Link>
 							</h4>
 						</div>
 
@@ -175,13 +176,13 @@ const Home = () => {
 									/>
 									<div className="hover-content">
 										<div className="hover-text">
-											<a href="#">Know More</a>
+											<Link to="services/domiciliary-care">Know More</Link>
 										</div>
 									</div>
 								</figure>
 							</div>
 							<h4>
-								<a href="#">Domiciliary Care</a>
+								<Link to="services/domiciliary-care">Domiciliary Care</Link>
 							</h4>
 						</div>
 
@@ -194,13 +195,13 @@ const Home = () => {
 									/>
 									<div className="hover-content">
 										<div className="hover-text">
-											<a href="#">Know More</a>
+											<Link to="services/dementia-care">Know More</Link>
 										</div>
 									</div>
 								</figure>
 							</div>
 							<h4>
-								<a href="#">Dementia Care</a>
+								<Link to="services/dementia-care">Dementia Care</Link>
 							</h4>
 						</div>
 
@@ -213,13 +214,13 @@ const Home = () => {
 									/>
 									<div className="hover-content">
 										<div className="hover-text">
-											<a href="#">Know More</a>
+											<Link to="services/childen-care">Know More</Link>
 										</div>
 									</div>
 								</figure>
 							</div>
 							<h4>
-								<a href="#">Children Care</a>
+								<Link to="services/childen-care">Children Care</Link>
 							</h4>
 						</div>
 
@@ -232,13 +233,13 @@ const Home = () => {
 									/>
 									<div className="hover-content">
 										<div className="hover-text">
-											<a href="#">Know More</a>
+											<Link to="services/Respite-care">Know More</Link>
 										</div>
 									</div>
 								</figure>
 							</div>
 							<h4>
-								<a href="#">Respite Care</a>
+								<Link to="services/respite-care">Respite Care</Link>
 							</h4>
 						</div>
 
@@ -251,13 +252,13 @@ const Home = () => {
 									/>
 									<div className="hover-content">
 										<div className="hover-text">
-											<a href="#">Know More</a>
+											<Link to="services/learning-disability-care">Know More</Link>
 										</div>
 									</div>
 								</figure>
 							</div>
 							<h4>
-								<a href="#">Learning Disability Care</a>
+								<Link to="services/learning-disability-care">Learning Disability Care</Link>
 							</h4>
 						</div>
 					</div>

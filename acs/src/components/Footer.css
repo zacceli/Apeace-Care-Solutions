@@ -18,7 +18,7 @@ footer {
 	align-content: center;
 }
 
-.inner-container {
+footer .inner-container {
 	display: flex;
 	justify-content: space-between;
 }
@@ -45,12 +45,12 @@ footer h4 {
 	margin-right: 0px;
 }
 
-ul {
+footer ul {
 	list-style: none;
 	padding: 0px;
 }
 
-li {
+footer li {
 	padding: 10px 0px;
 	font-size: 12px;
 }

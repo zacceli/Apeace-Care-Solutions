@@ -19,7 +19,8 @@ const Career = () => {
 			</section>
 			<section
 				className="top-content"
-				data-aos="fade-up">
+				data-aos="fade-up"
+				style={{ backgroundColor: "#a6cde2" }}>
 				<div className="content">
 					<Container>
 						<Row

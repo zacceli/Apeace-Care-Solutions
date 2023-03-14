@@ -99,39 +99,35 @@ function NavbarH() {
 								show={showServices}
 								onMouseEnter={showServicesDropdown}
 								onMouseLeave={hideServicesDropdown}
-								title={
-									<Link to="services">
-										<span>Services</span>
-									</Link>
-								}
+								title={<span>Services</span>}
 								menuVariant="Light">
 								<NavDropdown.Item>
-									<Link to="services/live-in-care">
+									<Link to="live-in-care">
 										<span>Live In Care</span>
 									</Link>
 								</NavDropdown.Item>
 								<NavDropdown.Item>
-									<Link to="services/domiciliary-care">
+									<Link to="domiciliary-care">
 										<span>Domiciliary Care</span>
 									</Link>
 								</NavDropdown.Item>
 								<NavDropdown.Item>
-									<Link to="services/dementia-care">
+									<Link to="dementia-care">
 										<span>Dementia Care</span>
 									</Link>
 								</NavDropdown.Item>
 								<NavDropdown.Item>
-									<Link to="services/children-care">
+									<Link to="children-care">
 										<span>Children Care</span>
 									</Link>
 								</NavDropdown.Item>
 								<NavDropdown.Item>
-									<Link to="services/respite-care">
+									<Link to="respite-care">
 										<span>Respite Care</span>
 									</Link>
 								</NavDropdown.Item>
 								<NavDropdown.Item>
-									<Link to="services/learning-disability-care">
+									<Link to="learning-disability-care">
 										<span>Learning Disability Care</span>
 									</Link>
 								</NavDropdown.Item>

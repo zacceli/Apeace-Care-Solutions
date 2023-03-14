@@ -157,13 +157,13 @@ const Home = () => {
 									/>
 									<div className="hover-content">
 										<div className="hover-text">
-											<Link to="services/live-in-care">Know More</Link>
+											<Link to="live-in-care">Know More</Link>
 										</div>
 									</div>
 								</figure>
 							</div>
 							<h4>
-								<Link to="services/live-in-care">Live In Care</Link>
+								<Link to="live-in-care">Live In Care</Link>
 							</h4>
 						</div>
 
@@ -176,13 +176,13 @@ const Home = () => {
 									/>
 									<div className="hover-content">
 										<div className="hover-text">
-											<Link to="services/domiciliary-care">Know More</Link>
+											<Link to="domiciliary-care">Know More</Link>
 										</div>
 									</div>
 								</figure>
 							</div>
 							<h4>
-								<Link to="services/domiciliary-care">Domiciliary Care</Link>
+								<Link to="domiciliary-care">Domiciliary Care</Link>
 							</h4>
 						</div>
 
@@ -195,13 +195,13 @@ const Home = () => {
 									/>
 									<div className="hover-content">
 										<div className="hover-text">
-											<Link to="services/dementia-care">Know More</Link>
+											<Link to="dementia-care">Know More</Link>
 										</div>
 									</div>
 								</figure>
 							</div>
 							<h4>
-								<Link to="services/dementia-care">Dementia Care</Link>
+								<Link to="dementia-care">Dementia Care</Link>
 							</h4>
 						</div>
 
@@ -214,13 +214,13 @@ const Home = () => {
 									/>
 									<div className="hover-content">
 										<div className="hover-text">
-											<Link to="services/childen-care">Know More</Link>
+											<Link to="childen-care">Know More</Link>
 										</div>
 									</div>
 								</figure>
 							</div>
 							<h4>
-								<Link to="services/childen-care">Children Care</Link>
+								<Link to="childen-care">Children Care</Link>
 							</h4>
 						</div>
 
@@ -233,13 +233,13 @@ const Home = () => {
 									/>
 									<div className="hover-content">
 										<div className="hover-text">
-											<Link to="services/Respite-care">Know More</Link>
+											<Link to="respite-care">Know More</Link>
 										</div>
 									</div>
 								</figure>
 							</div>
 							<h4>
-								<Link to="services/respite-care">Respite Care</Link>
+								<Link to="respite-care">Respite Care</Link>
 							</h4>
 						</div>
 
@@ -252,13 +252,13 @@ const Home = () => {
 									/>
 									<div className="hover-content">
 										<div className="hover-text">
-											<Link to="services/learning-disability-care">Know More</Link>
+											<Link to="learning-disability-care">Know More</Link>
 										</div>
 									</div>
 								</figure>
 							</div>
 							<h4>
-								<Link to="services/learning-disability-care">Learning Disability Care</Link>
+								<Link to="learning-disability-care">Learning Disability Care</Link>
 							</h4>
 						</div>
 					</div>

@@ -157,6 +157,7 @@ function NavbarH() {
 										<Col
 											className="d-none d-lg-flex"
 											xs="auto">
+											{/*Change the phone number here*/}
 											<span>Phone Number</span>
 										</Col>
 									</a>

@@ -1,4 +1,5 @@
 import "./ContactUs.css"
+import { Link } from "react-router-dom"
 import ContactForm from "./ContactForm"
 import AOS from "aos"
 import "aos/dist/aos.css"
@@ -18,7 +19,10 @@ const ContactUs = () => {
 				data-aos="fade-left">
 				<div className="left">
 					<div className="directory">
-						<span>Home &rarr; Contact Us</span>
+						<span>
+							<Link to="/">Home</Link>
+							&nbsp;Contact Us
+						</span>
 					</div>
 				</div>
 				<div className="right">
@@ -33,6 +37,7 @@ const ContactUs = () => {
 								</div>
 							</div>
 							<div className="icon-text">
+								{/*Change the phone number here*/}
 								<span>Phone Number</span>
 							</div>
 						</div>

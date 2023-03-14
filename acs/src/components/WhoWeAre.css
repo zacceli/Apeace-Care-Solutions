@@ -4,6 +4,15 @@ body {
 	font-family: "Montserrat", sans-serif;
 }
 
+.breadcrumb a {
+	text-decoration: none;
+	color: #000;
+}
+
+.breadcrumb a:hover {
+	text-decoration: underline;
+}
+
 .slider {
 	text-align: center;
 	padding: 20px 0px;

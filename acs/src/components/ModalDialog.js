@@ -1,5 +1,6 @@
 import { Modal, Button, Form, FormGroup } from "react-bootstrap"
-import { useState, useRef, useEffect } from "react"
+import { useState } from "react"
+import emailjs from "emailjs-com"
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import "./ModalDialog.css"
 
@@ -24,25 +25,11 @@ const ModalDialog = () => {
 	const [email, setEmail] = useState("")
 	const [name, setName] = useState("")
 	const [pNumber, setPNumber] = useState(0)
-	const [style, setStyle] = useState("")
-    const modalRef = useRef(0)
-    console.log(modalRef.current)
-
-    useEffect(() => {
-        modalRef.current++
-    }, [])
-    console.log(modalRef.current)
-
-	const changeStyle = (style) => {
-		console.log("you just clicked")
-
-		setStyle(style)
-	}
 
 	const displayPage = () => {
 		if (page === 0) {
 			return (
-				<div className={style}>
+				<div>
 					<div>
 						<p>Care in your community</p>
 					</div>
@@ -81,7 +68,7 @@ const ModalDialog = () => {
 			)
 		} else if (page === 1) {
 			return (
-				<div className={style}>
+				<div>
 					<div>
 						<p>Weekly hours of care required:</p>
 					</div>
@@ -127,7 +114,7 @@ const ModalDialog = () => {
 			)
 		} else if (page === 2) {
 			return (
-				<div className={style}>
+				<div>
 					<div>
 						<p>Please enter your postcode so we can find our closest carers to you:</p>
 					</div>
@@ -144,7 +131,7 @@ const ModalDialog = () => {
 			)
 		} else if (page === 3) {
 			return (
-				<div className={style}>
+				<div>
 					<div>
 						<p>We would love to discuss your care needs further. Please enter your email address below.</p>
 					</div>
@@ -152,6 +139,7 @@ const ModalDialog = () => {
 						<Form.Control
 							type="email"
 							placeholder="Enter your email"
+							name="email"
 							value={email}
 							onChange={(event) => setEmail(event.target.value)}
 							required
@@ -161,7 +149,7 @@ const ModalDialog = () => {
 			)
 		} else if (page === 4) {
 			return (
-				<div className={style}>
+				<div>
 					<div>
 						<p>Full name</p>
 					</div>
@@ -178,7 +166,7 @@ const ModalDialog = () => {
 			)
 		} else if (page === 5) {
 			return (
-				<div className={style}>
+				<div>
 					<div>
 						<p>Phone Number</p>
 					</div>
@@ -210,38 +198,37 @@ const ModalDialog = () => {
 	const nextPage = () => {
 		if (page < 1 && !!careOptions) {
 			changePage(page + 1)
-		} else {
-			changeStyle()
 		}
 		if (page < 2 && !!careHours) {
 			changePage(page + 1)
-		} else {
-			changeStyle()
 		}
 		if (page < 3 && !!postcode) {
 			changePage(page + 1)
-		} else {
-			changeStyle()
 		}
 		if (page < 4 && !!email) {
 			changePage(page + 1)
-		} else {
-			changeStyle()
 		}
 		if (page < 5 && !!name) {
 			changePage(page + 1)
-		} else {
-			changeStyle()
 		}
 		if (page < 6 && !!pNumber) {
 			changePage(page + 1)
-		} else {
-			changeStyle()
 		}
 	}
 
 	const handleSubmit = (e) => {
 		e.preventDefault()
+		// go to https://dashboard.emailjs.com/admin to get your own user ID, service ID and template ID
+		// change the values of the SERVICE_ID, TEMPLATE_ID and USER_ID to your own with the format
+		// of "service_XXXXXX", "template_XXXXXX", templateParams, "XXXX_XXXXXX" respectively
+		emailjs.send("service_ypl7yct", "template_5wo5mer", { email: email }, "J689-dRKrDFq2jQmY").then(
+			(result) => {
+				console.log(result.text)
+			},
+			(error) => {
+				console.log(error.text)
+			}
+		)
 		console.log("submitted successfully")
 	}
 
@@ -280,6 +267,7 @@ const ModalDialog = () => {
 						page === 5 ? (
 							<Button
 								variant="primary"
+								type="submit"
 								onClick={nextPage}
 								size="sm"
 								disabled={false}>

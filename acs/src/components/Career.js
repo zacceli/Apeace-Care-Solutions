@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import { Link } from "react-router-dom"
 import { Container, Row, Col } from "react-bootstrap"
 import "./WhoWeAre.css"
 import AOS from "aos"
@@ -13,7 +14,10 @@ const Career = () => {
 			<section className="breadcrumb">
 				<Container>
 					<div className="inner-container">
-						<span>Home &rarr; Career</span>
+						<span>
+							<Link to="/">Home</Link>
+							&nbsp;&rarr; Career
+						</span>
 					</div>
 				</Container>
 			</section>
@@ -75,6 +79,7 @@ const Career = () => {
 							<a
 								href="tel:0000000000"
 								className="btn">
+								{/*Change the phone number here*/}
 								Call Us
 							</a>
 						</div>

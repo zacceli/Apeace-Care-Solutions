@@ -1,10 +1,11 @@
 import { useEffect } from "react"
+import { Link } from "react-router-dom"
 import { Container, Row, Col } from "react-bootstrap"
 import "./WhoWeAre.css"
 import AOS from "aos"
 
 const ChildrenCare = () => {
-    useEffect(() => {
+	useEffect(() => {
 		AOS.init()
 	}, [])
 
@@ -13,7 +14,10 @@ const ChildrenCare = () => {
 			<section className="breadcrumb">
 				<Container>
 					<div className="inner-container">
-						<span>Home &rarr; Services &rarr; Children Care</span>
+						<span>
+							<Link to="/">Home</Link>
+							&nbsp;&rarr; Children Care
+						</span>
 					</div>
 				</Container>
 			</section>
@@ -79,6 +83,7 @@ const ChildrenCare = () => {
 							<a
 								href="tel:0000000000"
 								className="btn">
+								{/*Change the phone number here*/}
 								Call Us
 							</a>
 						</div>

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
 import { Container, Row, Col, Nav, Tab, Carousel } from "react-bootstrap"
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -22,7 +23,10 @@ const WhyApeace = () => {
 			<section className="breadcrumb">
 				<Container>
 					<div className="inner-container">
-						<span>Home &rarr; Why Apeace Care Solutions</span>
+						<span>
+							<Link to="/">Home</Link>
+							&nbsp;&rarr; Why Apeace Care Solutions
+						</span>
 					</div>
 				</Container>
 			</section>

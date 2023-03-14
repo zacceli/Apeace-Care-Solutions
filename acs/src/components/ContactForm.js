@@ -9,6 +9,10 @@ const ContactForm = () => {
 	const [recaptchaToken, setRecaptchaToken] = useState(null)
 	const [invalidCount, setInvalidCount] = useState(0)
 	const [validated, setValidated] = useState(false)
+	const [name, setName] = useState("")
+	const [email, setEmail] = useState("")
+	const [num, setNum] = useState("")
+	const [message, setMessage] = useState("")
 	const nameRef = useRef(null)
 	const emailRef = useRef(null)
 	const numRef = useRef(null)
@@ -56,6 +60,8 @@ const ContactForm = () => {
 					placeholder="Name"
 					pattern="[A-Za-z]+"
 					ref={nameRef}
+					value={name}
+					onChange={(e) => setName(e.target.value)}
 					required
 				/>
 				<Form.Control.Feedback
@@ -69,6 +75,8 @@ const ContactForm = () => {
 					type="email"
 					placeholder="Email"
 					ref={emailRef}
+					value={email}
+					onChange={(e) => setEmail(e.target.value)}
 					required
 				/>
 				<Form.Control.Feedback
@@ -83,6 +91,8 @@ const ContactForm = () => {
 					placeholder="Phone Number"
 					pattern="[A-Za-z0-9-]+"
 					ref={numRef}
+					value={num}
+					onChange={(e) => setNum(e.target.value)}
 					required
 				/>
 				<Form.Control.Feedback
@@ -97,6 +107,8 @@ const ContactForm = () => {
 					rows={3}
 					placeholder="Message"
 					ref={messageRef}
+					value={message}
+					onChange={(e) => setMessage(e.target.value)}
 					required
 				/>
 			</Form.Group>

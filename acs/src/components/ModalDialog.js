@@ -221,7 +221,7 @@ const ModalDialog = () => {
 		// go to https://dashboard.emailjs.com/admin to get your own user ID, service ID and template ID
 		// change the values of the SERVICE_ID, TEMPLATE_ID and USER_ID to your own with the format
 		// of "service_XXXXXX", "template_XXXXXX", templateParams, "XXXX_XXXXXX" respectively
-		emailjs.send("service_ypl7yct", "template_5wo5mer", { email: email }, "J689-dRKrDFq2jQmY").then(
+		emailjs.send("", "", { email: email }, "").then(
 			(result) => {
 				console.log(result.text)
 			},

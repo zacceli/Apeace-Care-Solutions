@@ -20,8 +20,12 @@ const ContactUs = () => {
 				<div className="left">
 					<div className="directory">
 						<span>
-							<Link to="/">Home</Link>
-							&nbsp;Contact Us
+							<Link
+								to="/"
+								style={{ textDecoration: "none", color: "#000" }}>
+								Home
+							</Link>
+							&nbsp;&rarr; Contact Us
 						</span>
 					</div>
 				</div>
